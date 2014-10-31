@@ -1,5 +1,4 @@
 __author__ = 'Esmir Acosta'
-
 from empleado import *
 
 class Departamento():
