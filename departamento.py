@@ -23,11 +23,11 @@ class Departamento():
 
     def aniadir_empleado(self, empleado):
         """
-        Añadir un empleado
+        Aniadir un empleado
 
-        Metodo que añade un empleado a la lista de empleados
+        Metodo que aniade un empleado a la lista de empleados
 
-        :param empleado: Empleado a añadir a la lista de empleados del departamento
+        :param empleado: Empleado a aniadir a la lista de empleados del departamento
         :type empleado: Empleado
         """
         self.empleados.append(empleado)
