@@ -1,7 +1,7 @@
 Clase test departamento
 =========================================
 
-.. automodule:: test_departamento
+.. automodule:: TestDepartamento
    :members:
    :undoc-members:
    :special-members:

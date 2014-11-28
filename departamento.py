@@ -1,6 +1,7 @@
 __author__ = 'Esmir Acosta'
 from empleado import *
 
+
 class Departamento():
     """
     Clase que representa un departamento

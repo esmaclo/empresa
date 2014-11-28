@@ -1,7 +1,7 @@
-Clase test departamento
+Clase empleado
 =========================================
 
-.. automodule:: test_departamento
+.. automodule:: empleado
    :members:
    :undoc-members:
    :special-members:

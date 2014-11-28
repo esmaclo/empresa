@@ -1,5 +1,4 @@
 __author__ = 'Esmir Acosta'
-
 from unittest import TestCase
 from mockito import *
 from departamento import *

@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>empleado &mdash; empresa_esmir v0.1 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="empresa_esmir v0.1 documentation" href="../index.html"/>
+        <link rel="up" title="Module code" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="../index.html" class="fa fa-home"> empresa_esmir</a>
+        
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul>
+<li class="toctree-l1"><a class="reference internal" href="../empresa.html">Clase empresa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../empleado.html">Clase empleado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../departamento.html">Clase departamento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test_departamento.html">Clase test departamento</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">empresa_esmir</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Module code</a> &raquo;</li>
+      
+    <li>empleado</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <h1>Source code for empleado</h1><div class="highlight"><pre>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s">&#39;Esmir Acosta&#39;</span>
+
+<div class="viewcode-block" id="Empleado"><a class="viewcode-back" href="../empleado.html#empleado.Empleado">[docs]</a><span class="k">class</span> <span class="nc">Empleado</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Clase que representa un empleado</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="Empleado.__init__"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">apellidos</span><span class="p">,</span> <span class="n">dni</span><span class="p">,</span> <span class="n">direccion</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">salario</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo contructor de la clase Empleado</span>
+
+<span class="sd">        Se inicializaran 7 atributos con los valores pasados como parametro</span>
+
+<span class="sd">        :param nombre: Nombre del empleado</span>
+<span class="sd">        :type nombre: str</span>
+<span class="sd">        :param apellidos: Apellidos del empleado</span>
+<span class="sd">        :type apellidos: str</span>
+<span class="sd">        :param dni: DNI del empleado</span>
+<span class="sd">        :type dni: str</span>
+<span class="sd">        :param direccion: Direccion del empleado</span>
+<span class="sd">        :type direccion: str</span>
+<span class="sd">        :param edad: Edad del empleado</span>
+<span class="sd">        :type edad: int</span>
+<span class="sd">        :param email: Email del empleado</span>
+<span class="sd">        :type email: str</span>
+<span class="sd">        :param salario: Salario del empleado</span>
+<span class="sd">        :type salario: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">apellidos</span> <span class="o">=</span> <span class="n">apellidos</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dni</span> <span class="o">=</span> <span class="n">dni</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">direccion</span> <span class="o">=</span> <span class="n">direccion</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">salario</span> <span class="o">=</span> <span class="n">salario</span>
+</div>
+<div class="viewcode-block" id="Empleado.get_salario"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.get_salario">[docs]</a>    <span class="k">def</span> <span class="nf">get_salario</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo consultor del atributo salario</span>
+
+<span class="sd">        Metodo que devuelve el valor del salario</span>
+
+<span class="sd">        :return: Retorna el valor del atributo propio salario</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">salario</span>
+</div>
+<div class="viewcode-block" id="Empleado.get_dni"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.get_dni">[docs]</a>    <span class="k">def</span> <span class="nf">get_dni</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo consultor del atributo dni</span>
+
+<span class="sd">        Metodo que devuelve el valor del dni</span>
+
+<span class="sd">        :return: Retorna el valor del atributo propio dni</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dni</span>
+</div>
+<div class="viewcode-block" id="Empleado.get_nombre_apellidos"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.get_nombre_apellidos">[docs]</a>    <span class="k">def</span> <span class="nf">get_nombre_apellidos</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo consultor de los atributos nombre y apellidos</span>
+
+<span class="sd">        Metodo que devuelve el valor del nombre y apellidos separados por espacio</span>
+
+<span class="sd">        :return: Retorna el valor del atributo propio nombre y apellidos</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">apellidos</span>
+</div>
+<div class="viewcode-block" id="Empleado.get_edad"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.get_edad">[docs]</a>    <span class="k">def</span> <span class="nf">get_edad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo consultor del atributo edad</span>
+
+<span class="sd">        Metodo que devuelve el valor de la edad</span>
+
+<span class="sd">        :return: Retorna el valor del atributo propio edad</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">edad</span>
+</div>
+<div class="viewcode-block" id="Empleado.get_email"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.get_email">[docs]</a>    <span class="k">def</span> <span class="nf">get_email</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo consultor del atributo email</span>
+
+<span class="sd">        Metodo que devuelve el valor del email</span>
+
+<span class="sd">        :return: Retorna el valor del atributo propio email</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">email</span>
+</div>
+<div class="viewcode-block" id="Empleado.get_direccion"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.get_direccion">[docs]</a>    <span class="k">def</span> <span class="nf">get_direccion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo consultor del atributo direccion</span>
+
+<span class="sd">        Metodo que devuelve el valor de la direccion</span>
+
+<span class="sd">        :return: Retorna el valor del atributo propio direccion</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">direccion</span>
+</div>
+<div class="viewcode-block" id="Empleado.get_salario_mensual"><a class="viewcode-back" href="../empleado.html#empleado.Empleado.get_salario_mensual">[docs]</a>    <span class="k">def</span> <span class="nf">get_salario_mensual</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metodo que se encarga de calcular el salario mensual del empleado</span>
+
+<span class="sd">        Sabiendo cual es el salario anual del empleado con el atributo propio salario, se calcula el mensual dividiendolo por 12</span>
+
+<span class="sd">        :return: Retorna el salario mensual</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_salario</span><span class="p">()</span><span class="o">/</span><span class="mi">12</span></div></div>
+</pre></div>
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, esmir.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,7 +1,7 @@
-Clase test departamento
+Clase empresa
 =========================================
 
-.. automodule:: test_departamento
+.. automodule:: Empresa
    :members:
    :undoc-members:
    :special-members:
